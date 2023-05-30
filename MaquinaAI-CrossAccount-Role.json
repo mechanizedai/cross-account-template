@@ -47,7 +47,13 @@
                                         "glue:*",
                                         "apigateway:*",
                                         "athena:*",
-                                        "iam:CreateRole"
+                                        "route53:*",
+                                        "iam:CreateRole",
+                                        "iam:CreatePolicy",
+                                        "iam:AttachRolePolicy",
+                                        "iam:DeleteRole",
+                                        "iam:DeletePolicy",
+                                        "iam:DetachRolePolicy"
                                     ],
                                     "Resource": [
                                         "*"
