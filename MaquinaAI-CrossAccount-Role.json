@@ -1,0 +1,72 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation template used to provision an IAM Cross Account Role for the MaquinaAI platform",
+    "Parameters": {
+        "ExternalId": {
+            "Description": "External ID provided by MaquinaAI during signup",
+            "Type": "String",
+            "AllowedPattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
+            "ConstraintDescription": "The provided ExternalID doesn't have a valid format. Please check your MaquinaAI account for the correct value. (Must be an UUID)"
+        }
+    },
+    "Resources": {
+        "IAMRole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "RoleName": "MaquinaAI-CrossAccount-Role",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Effect": "Allow",
+                            "Principal": {
+                                "AWS": "arn:aws:iam::686992243604:root"
+                            },
+                            "Action": "sts:AssumeRole",
+                            "Condition": {
+                                "StringEquals": {
+                                    "sts:ExternalId": {
+                                        "Ref": "ExternalId"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "Path": "/",
+                "Policies": [
+                    {
+                        "PolicyName": "MaquinaAI-Policy",
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "sagemaker:*",
+                                        "glue:*",
+                                        "apigateway:*",
+                                        "athena:*",
+                                        "iam:CreateRole"
+                                    ],
+                                    "Resource": [
+                                        "*"
+                                    ]
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "s3:*"
+                                    ],
+                                    "Resource": [
+                                        "arn:aws:s3:::maquinaai-*"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
