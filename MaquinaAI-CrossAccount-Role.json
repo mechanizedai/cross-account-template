@@ -50,6 +50,11 @@
                                         "athena:*",
                                         "route53:*",
                                         "cloudwatch:*",
+                                        "cloudformation:GetResource",
+                                        "kms:DescribeKey",
+                                        "iam:GetRole",
+                                        "iam:GetPolicy",
+                                        "iam:ListAttachedRolePolicies",
                                         "iam:CreateRole",
                                         "iam:CreatePolicy",
                                         "iam:AttachRolePolicy",
@@ -69,6 +74,15 @@
                                     "Resource": [
                                         "arn:aws:s3:::maquinaai-*",
                                         "arn:aws:s3:::sagemaker-*"
+                                    ]
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "iam:PassRole"
+                                    ],
+                                    "Resoure": [
+                                        "arn:aws:iam::*:role/MaquinaAI-SagemakerRole"
                                     ]
                                 }
                             ]
