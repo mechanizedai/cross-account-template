@@ -67,7 +67,8 @@
                                         "s3:*"
                                     ],
                                     "Resource": [
-                                        "arn:aws:s3:::maquinaai-*"
+                                        "arn:aws:s3:::maquinaai-*",
+                                        "arn:aws:s3:::sagemaker-*"
                                     ]
                                 }
                             ]
