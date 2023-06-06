@@ -81,7 +81,7 @@
                                     "Action": [
                                         "iam:PassRole"
                                     ],
-                                    "Resoure": [
+                                    "Resource": [
                                         "arn:aws:iam::*:role/MaquinaAI-SagemakerRole"
                                     ]
                                 }
