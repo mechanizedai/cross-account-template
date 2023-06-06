@@ -45,6 +45,7 @@
                                     "Action": [
                                         "sagemaker:*",
                                         "glue:*",
+                                        "acm:*",
                                         "apigateway:*",
                                         "athena:*",
                                         "route53:*",
