@@ -1,19 +1,19 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "AWS CloudFormation template used to provision an IAM Cross Account Role for the MaquinaAI platform",
+    "Description": "AWS CloudFormation template used to provision an IAM Cross Account Role for the MechanizedAI platform",
     "Parameters": {
         "ExternalId": {
-            "Description": "External ID provided by MaquinaAI during signup",
+            "Description": "External ID provided by MechanizedAI during signup",
             "Type": "String",
             "AllowedPattern": "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
-            "ConstraintDescription": "The provided ExternalID doesn't have a valid format. Please check your MaquinaAI account for the correct value. (Must be an UUID)"
+            "ConstraintDescription": "The provided ExternalID doesn't have a valid format. Please check your MechanizedAI account for the correct value. (Must be an UUID)"
         }
     },
     "Resources": {
         "IAMRole": {
             "Type": "AWS::IAM::Role",
             "Properties": {
-                "RoleName": "MaquinaAI-CrossAccount-Role",
+                "RoleName": "MechanizedAI-CrossAccount-Role",
                 "AssumeRolePolicyDocument": {
                     "Version": "2012-10-17",
                     "Statement": [
@@ -36,7 +36,7 @@
                 "Path": "/",
                 "Policies": [
                     {
-                        "PolicyName": "MaquinaAI-Policy",
+                        "PolicyName": "MechanizedAI-Policy",
                         "PolicyDocument": {
                             "Version": "2012-10-17",
                             "Statement": [
@@ -72,7 +72,7 @@
                                         "s3:*"
                                     ],
                                     "Resource": [
-                                        "arn:aws:s3:::maquinaai-*",
+                                        "arn:aws:s3:::mechanizedai-*",
                                         "arn:aws:s3:::sagemaker-*"
                                     ]
                                 },
@@ -82,7 +82,7 @@
                                         "iam:PassRole"
                                     ],
                                     "Resource": [
-                                        "arn:aws:iam::*:role/MaquinaAI-SagemakerRole"
+                                        "arn:aws:iam::*:role/MechanizedAI-SagemakerRole"
                                     ]
                                 }
                             ]
