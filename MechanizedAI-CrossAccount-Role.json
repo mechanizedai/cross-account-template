@@ -54,6 +54,7 @@
                                         "kms:DescribeKey",
                                         "iam:GetRole",
                                         "iam:GetPolicy",
+                                        "iam:GetRolePolicy",
                                         "iam:GetPolicyVersion",
                                         "iam:ListAttachedRolePolicies",
                                         "iam:ListRolePolicies",
