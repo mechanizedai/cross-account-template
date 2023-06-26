@@ -60,7 +60,8 @@
                                         "iam:AttachRolePolicy",
                                         "iam:DeleteRole",
                                         "iam:DeletePolicy",
-                                        "iam:DetachRolePolicy"
+                                        "iam:DetachRolePolicy",
+                                        "s3:ListBuckets"
                                     ],
                                     "Resource": [
                                         "*"
