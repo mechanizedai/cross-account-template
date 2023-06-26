@@ -50,6 +50,8 @@
                                         "athena:*",
                                         "route53:*",
                                         "cloudwatch:*",
+                                        "states:*",
+                                        "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
                                         "iam:GetRole",
@@ -57,6 +59,7 @@
                                         "iam:GetRolePolicy",
                                         "iam:GetPolicyVersion",
                                         "iam:ListAttachedRolePolicies",
+                                        "iam:ListInstanceProfilesForRole",
                                         "iam:ListRolePolicies",
                                         "iam:CreateRole",
                                         "iam:CreatePolicy",
@@ -65,6 +68,13 @@
                                         "iam:DeleteRole",
                                         "iam:DeletePolicy",
                                         "iam:DetachRolePolicy",
+                                        "lambda:CreateFunction",
+                                        "lambda:DeleteFunction",
+                                        "lambda:GetFunction",
+                                        "lambda:ListVersionsByFunction",
+                                        "lambda:GetFunctionCodeSigningConfig",
+                                        "lambda:UpdateFunctionCode",
+                                        "lambda:UpdateFunctionConfiguration",
                                         "s3:ListAllMyBuckets"
                                     ],
                                     "Resource": [
@@ -87,7 +97,8 @@
                                         "iam:PassRole"
                                     ],
                                     "Resource": [
-                                        "arn:aws:iam::*:role/MechanizedAI-SagemakerRole"
+                                        "arn:aws:iam::*:role/MechanizedAI-SagemakerRole",
+                                        "arn:aws:iam::*:role/MechanizedAI-LambdaRole"
                                     ]
                                 }
                             ]
