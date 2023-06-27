@@ -51,6 +51,7 @@
                                         "route53:*",
                                         "cloudwatch:*",
                                         "states:*",
+                                        "logs:*",
                                         "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
