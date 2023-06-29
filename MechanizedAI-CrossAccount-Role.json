@@ -103,6 +103,7 @@
                                         "arn:aws:iam::*:role/MechanizedAI-SagemakerRole",
                                         "arn:aws:iam::*:role/MechanizedAI-LambdaRole",
                                         "arn:aws:iam::*:role/MechanizedAI-GlueJobsRole",
+                                        "arn:aws:iam::*:role/MechanizedAI-APIGatewaySagemakerInvoication",
                                         "arn:aws:iam::*:role/MechanizedAI-SFNRole"
                                     ]
                                 }
