@@ -55,6 +55,22 @@
                                         "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
+                                        "lambda:CreateFunction",
+                                        "lambda:DeleteFunction",
+                                        "lambda:GetFunction",
+                                        "lambda:ListVersionsByFunction",
+                                        "lambda:GetFunctionCodeSigningConfig",
+                                        "lambda:UpdateFunctionCode",
+                                        "lambda:UpdateFunctionConfiguration",
+                                        "s3:ListAllMyBuckets"
+                                    ],
+                                    "Resource": [
+                                        "*"
+                                    ]
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
                                         "iam:GetRole",
                                         "iam:GetPolicy",
                                         "iam:GetRolePolicy",
@@ -70,15 +86,7 @@
                                         "iam:DeleteRole",
                                         "iam:DeletePolicy",
                                         "iam:DeleteRolePolicy",
-                                        "iam:DetachRolePolicy",
-                                        "lambda:CreateFunction",
-                                        "lambda:DeleteFunction",
-                                        "lambda:GetFunction",
-                                        "lambda:ListVersionsByFunction",
-                                        "lambda:GetFunctionCodeSigningConfig",
-                                        "lambda:UpdateFunctionCode",
-                                        "lambda:UpdateFunctionConfiguration",
-                                        "s3:ListAllMyBuckets"
+                                        "iam:DetachRolePolicy"
                                     ],
                                     "Resource": [
                                         "*"
