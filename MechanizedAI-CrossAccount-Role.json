@@ -61,8 +61,7 @@
                                         "lambda:ListVersionsByFunction",
                                         "lambda:GetFunctionCodeSigningConfig",
                                         "lambda:UpdateFunctionCode",
-                                        "lambda:UpdateFunctionConfiguration",
-                                        "s3:ListAllMyBuckets"
+                                        "lambda:UpdateFunctionConfiguration"
                                     ],
                                     "Resource": [
                                         "*"
