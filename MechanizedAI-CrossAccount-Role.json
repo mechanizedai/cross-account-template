@@ -45,6 +45,7 @@
                                     "Action": [
                                         "sagemaker:*",
                                         "glue:*",
+                                        "emr-serverless:*",
                                         "acm:*",
                                         "apigateway:*",
                                         "athena:*",
