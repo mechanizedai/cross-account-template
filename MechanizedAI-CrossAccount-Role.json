@@ -53,6 +53,7 @@
                                         "cloudwatch:*",
                                         "states:*",
                                         "logs:*",
+                                        "events:*",
                                         "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
@@ -62,7 +63,10 @@
                                         "lambda:ListVersionsByFunction",
                                         "lambda:GetFunctionCodeSigningConfig",
                                         "lambda:UpdateFunctionCode",
-                                        "lambda:UpdateFunctionConfiguration"
+                                        "lambda:UpdateFunctionConfiguration",
+                                        "lambda:AddPermission",
+                                        "Lambda:RemovePermission",
+                                        "lambda:GetPolicy"
                                     ],
                                     "Resource": [
                                         "*"
@@ -81,6 +85,7 @@
                                         "iam:ListRolePolicies",
                                         "iam:CreateRole",
                                         "iam:CreatePolicy",
+                                        "iam:CreatePolicyVersion",
                                         "iam:AttachRolePolicy",
                                         "iam:PutRolePolicy",
                                         "iam:DeleteRole",
