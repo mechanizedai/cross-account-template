@@ -90,6 +90,7 @@
                                         "iam:PutRolePolicy",
                                         "iam:DeleteRole",
                                         "iam:DeletePolicy",
+                                        "iam:DeletePolicyVersion",
                                         "iam:DeleteRolePolicy",
                                         "iam:DetachRolePolicy"
                                     ],
