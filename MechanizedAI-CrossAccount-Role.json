@@ -54,6 +54,7 @@
                                         "states:*",
                                         "logs:*",
                                         "events:*",
+                                        "ec2:*",
                                         "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
