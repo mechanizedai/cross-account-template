@@ -70,9 +70,7 @@
                                         "Lambda:RemovePermission",
                                         "lambda:GetPolicy"
                                     ],
-                                    "Resource": [
-                                        "*"
-                                    ]
+                                    "Resource": "*"
                                 },
                                 {
                                     "Effect": "Allow",
@@ -88,6 +86,7 @@
                                         "iam:CreateRole",
                                         "iam:CreatePolicy",
                                         "iam:CreatePolicyVersion",
+                                        "iam:CreateServiceLinkedRole",
                                         "iam:AttachRolePolicy",
                                         "iam:PutRolePolicy",
                                         "iam:UpdateAssumeRolePolicy",
@@ -103,9 +102,7 @@
                                 },
                                 {
                                     "Effect": "Allow",
-                                    "Action": [
-                                        "s3:*"
-                                    ],
+                                    "Action": "s3:*",
                                     "Resource": [
                                         "arn:aws:s3:::mechanizedai-*",
                                         "arn:aws:s3:::sagemaker-*",
