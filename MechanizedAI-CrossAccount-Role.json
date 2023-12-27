@@ -112,6 +112,15 @@
                                 {
                                     "Effect": "Allow",
                                     "Action": [
+                                        "dynamodb:*"
+                                    ],
+                                    "Resource": [
+                                        "arn:aws:dynamodb:*:*:table/mechanizedai-*"
+                                    ]
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
                                         "iam:PassRole"
                                     ],
                                     "Resource": [
