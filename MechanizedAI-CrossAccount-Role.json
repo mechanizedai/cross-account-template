@@ -48,14 +48,18 @@
                                         "emr-serverless:*",
                                         "elasticmapreduce:*",
                                         "acm:*",
+                                        "datasync:*",
                                         "apigateway:*",
                                         "athena:*",
                                         "route53:*",
+                                        "dms:*",
+                                        "secretsmanager:*",
                                         "cloudwatch:*",
                                         "states:*",
                                         "logs:*",
                                         "events:*",
                                         "ec2:*",
+                                        "s3:ListBucket",
                                         "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
@@ -129,7 +133,9 @@
                                         "arn:aws:iam::*:role/MechanizedAI-GlueJobsRole",
                                         "arn:aws:iam::*:role/MechanizedAI-APIGatewaySagemakerInvoication",
                                         "arn:aws:iam::*:role/MechanizedAI-SFNRole",
-                                        "arn:aws:iam::*:role/MechanizedAI-EMRRole"
+                                        "arn:aws:iam::*:role/MechanizedAI-EMRRole",
+                                        "arn:aws:iam::*:role/MechanizedAI-DataSync",
+                                        "arn:aws:iam::*:role/MechanizedAI-DMS"
                                     ]
                                 }
                             ]
