@@ -125,6 +125,25 @@
                                 {
                                     "Effect": "Allow",
                                     "Action": [
+                                        "aoss:*"
+                                    ],
+                                    "Resource": "*",
+                                    "Condition": {
+                                        "StringLike": {
+                                            "aoss:collection": "mechanizedai"
+                                        }
+                                    }
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "aoss:CreateCollection"
+                                    ],
+                                    "Resource": "*"
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
                                         "iam:PassRole"
                                     ],
                                     "Resource": [
