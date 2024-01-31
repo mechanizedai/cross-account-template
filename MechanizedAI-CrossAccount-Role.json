@@ -64,6 +64,7 @@
                                         "cloudformation:GetResource",
                                         "kms:DescribeKey",
                                         "lambda:CreateFunction",
+                                        "lambda:InvokeFunction",
                                         "lambda:DeleteFunction",
                                         "lambda:GetFunction",
                                         "lambda:ListVersionsByFunction",
