@@ -59,6 +59,7 @@
                                         "logs:*",
                                         "events:*",
                                         "ec2:*",
+                                        "aoss:*",
                                         "s3:ListBucket",
                                         "cloudfront:UpdateDistribution",
                                         "cloudformation:GetResource",
@@ -73,6 +74,7 @@
                                         "lambda:UpdateFunctionConfiguration",
                                         "lambda:AddPermission",
                                         "Lambda:RemovePermission",
+                                        "lambda:GetLayerVersion",
                                         "lambda:GetPolicy"
                                     ],
                                     "Resource": "*"
@@ -122,18 +124,6 @@
                                     "Resource": [
                                         "arn:aws:dynamodb:*:*:table/mechanizedai-*"
                                     ]
-                                },
-                                {
-                                    "Effect": "Allow",
-                                    "Action": [
-                                        "aoss:*"
-                                    ],
-                                    "Resource": "*",
-                                    "Condition": {
-                                        "StringLike": {
-                                            "aoss:collection": "mechanizedai"
-                                        }
-                                    }
                                 },
                                 {
                                     "Effect": "Allow",
