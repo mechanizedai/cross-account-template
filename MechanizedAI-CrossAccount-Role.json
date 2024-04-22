@@ -75,7 +75,8 @@
                                         "lambda:AddPermission",
                                         "Lambda:RemovePermission",
                                         "lambda:GetLayerVersion",
-                                        "lambda:GetPolicy"
+                                        "lambda:GetPolicy",
+                                        "lambda:PublishLayerVersion"
                                     ],
                                     "Resource": "*"
                                 },
