@@ -43,6 +43,19 @@
                                 {
                                     "Effect": "Allow",
                                     "Action": [
+                                        "secretsmanager:GetSecretValue",
+                                        "secretsmanager:DescribeSecret",
+                                        "secretsmanager:CreateSecret",
+                                        "secretsmanager:UpdateSecret",
+                                        "secretsmanager:DeleteSecret"
+                                    ],
+                                    "Resource": [
+                                        "arn:aws:secretsmanager:*:*:secret:mechanizedai*"
+                                    ]
+                                },
+                                {
+                                    "Effect": "Allow",
+                                    "Action": [
                                         "sagemaker:*",
                                         "glue:*",
                                         "emr-serverless:*",
@@ -53,7 +66,7 @@
                                         "athena:*",
                                         "route53:*",
                                         "dms:*",
-                                        "secretsmanager:*",
+                                        "secretsmanager:ListSecrets",
                                         "cloudwatch:*",
                                         "states:*",
                                         "logs:*",
