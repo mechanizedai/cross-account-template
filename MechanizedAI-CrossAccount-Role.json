@@ -41,6 +41,30 @@
                             "Version": "2012-10-17",
                             "Statement": [
                                 {
+                                    "Sid": "AllowAccessToSecretsWithPrefix",
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "secretsmanager:GetSecretValue",
+                                        "secretsmanager:DescribeSecret",
+                                        "secretsmanager:CreateSecret",
+                                        "secretsmanager:UpdateSecret",
+                                        "secretsmanager:DeleteSecret"
+                                    ],
+                                    "Resource": [
+                                        "arn:aws:secretsmanager:*:*:secret:mechanized-ai-llm-*"
+                                    ]
+                                },
+                                {
+                                    "Sid": "AllowAccessToSecrets",
+                                    "Effect": "Allow",
+                                    "Action": [
+                                        "secretsmanager:ListSecrets"
+                                    ],
+                                    "Resource": [
+                                        "arn:aws:secretsmanager:*:*:secret:*"
+                                    ]
+                                },
+                                {
                                     "Effect": "Allow",
                                     "Action": [
                                         "sagemaker:*",
