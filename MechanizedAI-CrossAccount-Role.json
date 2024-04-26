@@ -50,7 +50,7 @@
                                         "secretsmanager:DeleteSecret"
                                     ],
                                     "Resource": [
-                                        "arn:aws:secretsmanager:*:*:secret:mechanized-ai-llm-*"
+                                        "arn:aws:secretsmanager:*:*:secret:mechanizedai*"
                                     ]
                                 },
                                 {
