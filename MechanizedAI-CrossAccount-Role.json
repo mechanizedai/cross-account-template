@@ -143,13 +143,6 @@
                                 {
                                     "Effect": "Allow",
                                     "Action": [
-                                        "aoss:CreateCollection"
-                                    ],
-                                    "Resource": "*"
-                                },
-                                {
-                                    "Effect": "Allow",
-                                    "Action": [
                                         "iam:PassRole"
                                     ],
                                     "Resource": [
