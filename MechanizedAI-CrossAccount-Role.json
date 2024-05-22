@@ -153,7 +153,8 @@
                                         "arn:aws:iam::*:role/MechanizedAI-SFNRole",
                                         "arn:aws:iam::*:role/MechanizedAI-EMRRole",
                                         "arn:aws:iam::*:role/MechanizedAI-DataSync",
-                                        "arn:aws:iam::*:role/MechanizedAI-DMS"
+                                        "arn:aws:iam::*:role/MechanizedAI-DMS",
+                                        "arn:aws:iam::*:role/MechanizedAI-LambdaStepfunctionExecution"
                                     ]
                                 }
                             ]
