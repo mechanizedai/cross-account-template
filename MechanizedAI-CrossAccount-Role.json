@@ -60,10 +60,10 @@
                                         "events:*",
                                         "ec2:*",
                                         "aoss:*",
+                                        "kms:*",
+                                        "cloudformation:*",
                                         "s3:ListBucket",
                                         "cloudfront:UpdateDistribution",
-                                        "cloudformation:GetResource",
-                                        "kms:DescribeKey",
                                         "lambda:CreateFunction",
                                         "lambda:InvokeFunction",
                                         "lambda:DeleteFunction",
@@ -149,12 +149,13 @@
                                         "arn:aws:iam::*:role/MechanizedAI-SagemakerRole",
                                         "arn:aws:iam::*:role/MechanizedAI-LambdaRole",
                                         "arn:aws:iam::*:role/MechanizedAI-GlueJobsRole",
-                                        "arn:aws:iam::*:role/MechanizedAI-APIGatewaySagemakerInvoication",
+                                        "arn:aws:iam::*:role/MechanizedAI-APIGatewayInvoication",
                                         "arn:aws:iam::*:role/MechanizedAI-SFNRole",
                                         "arn:aws:iam::*:role/MechanizedAI-EMRRole",
                                         "arn:aws:iam::*:role/MechanizedAI-DataSync",
                                         "arn:aws:iam::*:role/MechanizedAI-DMS",
-                                        "arn:aws:iam::*:role/MechanizedAI-LambdaStepfunctionExecution"
+                                        "arn:aws:iam::*:role/MechanizedAI-LambdaStepfunctionExecution",
+                                        "arn:aws:iam::*:role/MechanizedAI-EventBridge"
                                     ]
                                 }
                             ]
