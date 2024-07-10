@@ -82,7 +82,7 @@
                                         "lambda:GetPolicy",
                                         "lambda:PublishLayerVersion",
                                         "lambda:ListLayerVersions",
-				                        "lambda:DeleteLayerVersion"
+                                        "lambda:DeleteLayerVersion"
                                     ],
                                     "Resource": "*"
                                 },
@@ -152,7 +152,7 @@
                                     ],
                                     "Resource": [
                                         "arn:aws:iam::*:role/MechanizedAI-ECSTaskRole",
-				                        "arn:aws:iam::*:role/MechanizedAI-ECSTaskExecutionRole",
+                                        "arn:aws:iam::*:role/MechanizedAI-ECSTaskExecutionRole",
                                         "arn:aws:iam::*:role/MechanizedAI-SagemakerRole",
                                         "arn:aws:iam::*:role/MechanizedAI-LambdaRole",
                                         "arn:aws:iam::*:role/MechanizedAI-GlueJobsRole",
