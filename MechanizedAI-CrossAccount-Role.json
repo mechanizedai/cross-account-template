@@ -54,11 +54,15 @@
                                         "route53:*",
                                         "dms:*",
                                         "secretsmanager:ListSecrets",
+                                        "application-autoscaling:*",
                                         "cloudwatch:*",
                                         "states:*",
                                         "logs:*",
                                         "events:*",
                                         "ec2:*",
+                                        "ecs:*",
+                                        "ecr:*",
+                                        "servicediscovery:*",
                                         "aoss:*",
                                         "kms:*",
                                         "cloudformation:*",
@@ -78,7 +82,7 @@
                                         "lambda:GetPolicy",
                                         "lambda:PublishLayerVersion",
                                         "lambda:ListLayerVersions",
-                                        "lambda:DeleteLayerVersion"
+				                        "lambda:DeleteLayerVersion"
                                     ],
                                     "Resource": "*"
                                 },
@@ -147,6 +151,8 @@
                                         "iam:PassRole"
                                     ],
                                     "Resource": [
+                                        "arn:aws:iam::*:role/MechanizedAI-ECSTaskRole",
+				                        "arn:aws:iam::*:role/MechanizedAI-ECSTaskExecutionRole",
                                         "arn:aws:iam::*:role/MechanizedAI-SagemakerRole",
                                         "arn:aws:iam::*:role/MechanizedAI-LambdaRole",
                                         "arn:aws:iam::*:role/MechanizedAI-GlueJobsRole",
