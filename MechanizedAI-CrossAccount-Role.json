@@ -82,7 +82,8 @@
                                         "lambda:GetPolicy",
                                         "lambda:PublishLayerVersion",
                                         "lambda:ListLayerVersions",
-                                        "lambda:DeleteLayerVersion"
+                                        "lambda:DeleteLayerVersion",
+                                        "lambda:ListFunctions"
                                     ],
                                     "Resource": "*"
                                 },
