@@ -164,7 +164,8 @@
                                         "arn:aws:iam::*:role/MechanizedAI-DMS",
                                         "arn:aws:iam::*:role/MechanizedAI-LambdaStepfunctionExecution",
                                         "arn:aws:iam::*:role/MechanizedAI-EventBridge",
-                                        "arn:aws:iam::*:role/MechanizedAI-CodeBuildRole"
+                                        "arn:aws:iam::*:role/MechanizedAI-CodeBuildRole",
+                                        "arn:aws:iam::*:role/MechanizedAI-EventBridgeRole"
                                     ]
                                 }
                             ]
