@@ -84,7 +84,9 @@
                                         "lambda:ListLayerVersions",
                                         "lambda:DeleteLayerVersion",
                                         "lambda:ListFunctions",
-                                        "elasticloadbalancing:*"
+                                        "elasticloadbalancing:*",
+                                        "elasticfilesystem:*",
+                                        "ssm:*"
                                     ],
                                     "Resource": "*"
                                 },
