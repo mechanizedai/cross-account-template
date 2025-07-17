@@ -86,7 +86,8 @@
                                         "lambda:ListFunctions",
                                         "elasticloadbalancing:*",
                                         "elasticfilesystem:*",
-                                        "ssm:*"
+                                        "ssm:*",
+                                        "secretsmanager:*"
                                     ],
                                     "Resource": "*"
                                 },
