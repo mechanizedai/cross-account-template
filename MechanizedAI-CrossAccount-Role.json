@@ -44,6 +44,9 @@
                                     "Effect": "Allow",
                                     "Action": [
                                         "route53:*",
+                                        "appautoscaling:*",
+                                        "acm:*",
+                                        "rds:*",
                                         "secretsmanager:ListSecrets",
                                         "cloudwatch:*",
                                         "states:*",
