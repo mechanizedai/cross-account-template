@@ -84,6 +84,8 @@
                                         "lambda:ListLayerVersions",
                                         "lambda:DeleteLayerVersion",
                                         "lambda:ListFunctions",
+                                        "lambda:TagResource",
+                                        "lambda:UntagResource",
                                         "elasticloadbalancing:*",
                                         "elasticfilesystem:*",
                                         "ssm:*",
@@ -113,7 +115,11 @@
                                         "iam:DeletePolicy",
                                         "iam:DeletePolicyVersion",
                                         "iam:DeleteRolePolicy",
-                                        "iam:DetachRolePolicy"
+                                        "iam:DetachRolePolicy",
+                                        "iam:TagRole",
+                                        "iam:UntagRole",
+                                        "iam:TagPolicy",
+                                        "iam:UntagPolicy"
                                     ],
                                     "Resource": [
                                         "*"
