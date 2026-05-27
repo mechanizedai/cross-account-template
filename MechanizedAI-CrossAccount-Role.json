@@ -61,24 +61,7 @@
                                         "cloudformation:*",
                                         "s3:ListBucket",
                                         "cloudfront:UpdateDistribution",
-                                        "lambda:CreateFunction",
-                                        "lambda:InvokeFunction",
-                                        "lambda:DeleteFunction",
-                                        "lambda:GetFunction",
-                                        "lambda:ListVersionsByFunction",
-                                        "lambda:GetFunctionCodeSigningConfig",
-                                        "lambda:UpdateFunctionCode",
-                                        "lambda:UpdateFunctionConfiguration",
-                                        "lambda:AddPermission",
-                                        "Lambda:RemovePermission",
-                                        "lambda:GetLayerVersion",
-                                        "lambda:GetPolicy",
-                                        "lambda:PublishLayerVersion",
-                                        "lambda:ListLayerVersions",
-                                        "lambda:DeleteLayerVersion",
-                                        "lambda:ListFunctions",
-                                        "lambda:TagResource",
-                                        "lambda:UntagResource",
+                                        "lambda:*",
                                         "elasticloadbalancing:*",
                                         "elasticfilesystem:*",
                                         "ssm:*",
@@ -116,19 +99,6 @@
                                     ],
                                     "Resource": [
                                         "*"
-                                    ]
-                                },
-                                {
-                                    "Effect": "Allow",
-                                    "Action": [
-                                        "secretsmanager:GetSecretValue",
-                                        "secretsmanager:DescribeSecret",
-                                        "secretsmanager:CreateSecret",
-                                        "secretsmanager:UpdateSecret",
-                                        "secretsmanager:DeleteSecret"
-                                    ],
-                                    "Resource": [
-                                        "arn:aws:secretsmanager:*:*:secret:mechanizedai*"
                                     ]
                                 },
                                 {
