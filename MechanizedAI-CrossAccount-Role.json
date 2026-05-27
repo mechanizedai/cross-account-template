@@ -62,6 +62,7 @@
                                         "s3:ListBucket",
                                         "cloudfront:UpdateDistribution",
                                         "lambda:*",
+                                        "rds:*",
                                         "elasticache:*",
                                         "elasticloadbalancing:*",
                                         "elasticfilesystem:*",
