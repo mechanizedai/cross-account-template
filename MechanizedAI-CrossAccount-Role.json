@@ -43,16 +43,9 @@
                                 {
                                     "Effect": "Allow",
                                     "Action": [
-                                        "sagemaker:*",
-                                        "glue:*",
-                                        "emr-serverless:*",
-                                        "elasticmapreduce:*",
                                         "acm:*",
-                                        "datasync:*",
                                         "apigateway:*",
-                                        "athena:*",
                                         "route53:*",
-                                        "dms:*",
                                         "secretsmanager:ListSecrets",
                                         "application-autoscaling:*",
                                         "cloudwatch:*",
@@ -60,6 +53,7 @@
                                         "logs:*",
                                         "events:*",
                                         "ec2:*",
+                                        "vpce:AllowMultiRegion",
                                         "ecs:*",
                                         "ecr:*",
                                         "servicediscovery:*",
@@ -68,24 +62,9 @@
                                         "cloudformation:*",
                                         "s3:ListBucket",
                                         "cloudfront:UpdateDistribution",
-                                        "lambda:CreateFunction",
-                                        "lambda:InvokeFunction",
-                                        "lambda:DeleteFunction",
-                                        "lambda:GetFunction",
-                                        "lambda:ListVersionsByFunction",
-                                        "lambda:GetFunctionCodeSigningConfig",
-                                        "lambda:UpdateFunctionCode",
-                                        "lambda:UpdateFunctionConfiguration",
-                                        "lambda:AddPermission",
-                                        "Lambda:RemovePermission",
-                                        "lambda:GetLayerVersion",
-                                        "lambda:GetPolicy",
-                                        "lambda:PublishLayerVersion",
-                                        "lambda:ListLayerVersions",
-                                        "lambda:DeleteLayerVersion",
-                                        "lambda:ListFunctions",
-                                        "lambda:TagResource",
-                                        "lambda:UntagResource",
+                                        "lambda:*",
+                                        "rds:*",
+                                        "elasticache:*",
                                         "elasticloadbalancing:*",
                                         "elasticfilesystem:*",
                                         "ssm:*",
@@ -104,6 +83,7 @@
                                         "iam:ListInstanceProfilesForRole",
                                         "iam:ListPolicyVersions",
                                         "iam:ListRolePolicies",
+                                        "iam:ListEntitiesForPolicy",
                                         "iam:CreateRole",
                                         "iam:CreatePolicy",
                                         "iam:CreatePolicyVersion",
@@ -127,24 +107,9 @@
                                 },
                                 {
                                     "Effect": "Allow",
-                                    "Action": [
-                                        "secretsmanager:GetSecretValue",
-                                        "secretsmanager:DescribeSecret",
-                                        "secretsmanager:CreateSecret",
-                                        "secretsmanager:UpdateSecret",
-                                        "secretsmanager:DeleteSecret"
-                                    ],
-                                    "Resource": [
-                                        "arn:aws:secretsmanager:*:*:secret:mechanizedai*"
-                                    ]
-                                },
-                                {
-                                    "Effect": "Allow",
                                     "Action": "s3:*",
                                     "Resource": [
-                                        "arn:aws:s3:::mechanizedai-*",
-                                        "arn:aws:s3:::sagemaker-*",
-                                        "arn:aws:s3:::jumpstart-*"
+                                        "arn:aws:s3:::mechanizedai-*"
                                     ]
                                 },
                                 {
